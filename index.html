@@ -2,24 +2,190 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Mahamat | Portfolio</title>
+<title>Mahamat Saleh | Portfolio</title>
+
 <style>
-body {
-    background: #0f172a;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    padding-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
-h1 { font-size: 48px; }
-p { color: #38bdf8; }
+
+body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+header h2 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #cbd5f5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin-top: 40px;
+  display: inline-block;
+  background: #2563eb;
+  padding: 15px 40px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+}
 </style>
 </head>
+
 <body>
 
-<h1>Mahamat Saleh</h1>
-<p>Étudiant en BTS SIO – Portfolio</p>
-<p>Site en construction 🚀</p>
+<header>
+  <h2>Mahamat</h2>
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Oumar Abdelkerim <span>Mahamat Saleh</span></h1>
+  <p>
+    Étudiant en BTS SIO option SLAM à Ynov Campus Lyon, passionné par le développement web
+    et à la recherche d’une alternance en développement front-end.
+  </p>
+  <a class="btn" href="#contact">Me contacter</a>
+</section>
+
+<section id="profil">
+  <h2>Profil</h2>
+  <p>
+    Étudiant motivé, rigoureux et autonome. Je développe des projets personnels et scolaires
+    pour renforcer mes compétences en HTML, CSS, JavaScript et technologies web modernes.
+  </p>
+</section>
+
+<section id="competences">
+  <h2>Compétences</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>HTML / CSS</h3>
+      <p>Création de sites web modernes, responsives et compatibles avec tous les navigateurs.</p>
+    </div>
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Fonctionnalités interactives : DOM, événements, logique côté client.</p>
+    </div>
+    <div class="card">
+      <h3>Python</h3>
+      <p>Scripts simples, conditions, boucles et fonctions.</p>
+    </div>
+    <div class="card">
+      <h3>Outils</h3>
+      <p>VS Code, GitHub, Docker, React, Canva</p>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Projets</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Boutique en ligne</h3>
+      <p>
+        Site e-commerce développé en HTML, CSS et JavaScript avec interface moderne et responsive.
+      </p>
+    </div>
+    <div class="card">
+      <h3>CV en ligne</h3>
+      <p>
+        Création et déploiement d’un CV web pour présenter mon profil et mes compétences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email : msoumarabdelkerim@gmail.com</p>
+  <p>GitHub : <a style="color:#38bdf8" href="https://github.com/ms_officiel">github.com/ms_officiel</a></p>
+  <p>LinkedIn : <a style="color:#38bdf8" href="https://linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324">Voir mon profil</a></p>
+</section>
+
+<footer>
+  © 2026 — Mahamat Saleh | Portfolio BTS SIO
+</footer>
 
 </body>
 </html>
