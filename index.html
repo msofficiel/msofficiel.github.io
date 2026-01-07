@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Mahamat Saleh | Portfolio</title>
+<title>Mahamat Saleh – Développeur Web Front-End</title>
 
 <style>
 * {
@@ -13,116 +13,111 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #111827, #020617);
+  background: radial-gradient(circle at top, #020617, #020617);
   color: #e5e7eb;
 }
 
 /* HEADER */
 header {
+  padding: 25px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 8%;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(2,6,23,0.8);
   backdrop-filter: blur(10px);
 }
 
 header h2 {
-  color: #38bdf8;
+  color: #22c55e;
   font-size: 28px;
 }
 
 nav a {
   color: #e5e7eb;
-  margin-left: 25px;
+  margin-left: 30px;
   text-decoration: none;
   font-weight: 500;
+  opacity: 0.7;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #6366f1;
+  opacity: 1;
+  color: #22c55e;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 140px 20px;
+  padding: 120px 20px 60px;
 }
 
 .hero h1 {
   font-size: 64px;
-  font-weight: 700;
 }
 
 .hero span {
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  background: linear-gradient(90deg, #22c55e, #2dd4bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero p {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #cbd5f5;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.hero h3 {
+  margin-top: 15px;
+  font-weight: 400;
+  color: #a7f3d0;
 }
 
-.btn {
-  margin-top: 40px;
+.badge {
   display: inline-block;
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
-  padding: 15px 40px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #22c55e, #2dd4bf);
+  padding: 14px 40px;
   border-radius: 999px;
-  color: white;
-  text-decoration: none;
+  color: #022c22;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+/* INFO CARDS */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 50px 10%;
 }
 
-/* SECTIONS */
-section {
-  padding: 90px 10%;
+.info-box {
+  background: rgba(2,44,34,0.4);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
 
-h2 {
+.info-box h4 {
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 15%;
+  text-align: center;
+}
+
+.about h2 {
   font-size: 36px;
-  margin-bottom: 40px;
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #22c55e, #2dd4bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: rgba(17, 24, 39, 0.9);
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 50px;
-  color: #9ca3af;
+  color: #6ee7b7;
 }
 </style>
 </head>
@@ -133,74 +128,52 @@ footer {
   <h2>Mahamat</h2>
   <nav>
     <a href="#profil">Profil</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1>Oumar Abdelkerim <span>Mahamat Saleh</span></h1>
-  <p>
-    Étudiant en BTS SIO option SLAM à Ynov Campus Lyon, passionné par le développement web
-    et à la recherche d’une alternance en développement front-end.
-  </p>
-  <a class="btn" href="#contact">Me contacter</a>
+  <h3>Développeur Web Front-End Junior</h3>
+  <div class="badge">Recherche alternance – Disponible immédiatement</div>
 </section>
 
-<section id="profil">
-  <h2>Profil</h2>
-  <p>
-    Étudiant motivé, rigoureux et autonome. Je développe des projets personnels et scolaires
-    pour renforcer mes compétences en HTML, CSS, JavaScript et technologies web modernes.
-  </p>
-</section>
+<section class="info">
+  <div class="info-box">
+    <h4>Localisation</h4>
+    <p>Lyon</p>
+  </div>
 
-<section id="competences">
-  <h2>Compétences</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>HTML / CSS</h3>
-      <p>Création de sites web modernes, responsives et compatibles avec tous les navigateurs.</p>
-    </div>
-    <div class="card">
-      <h3>JavaScript</h3>
-      <p>Fonctionnalités interactives : DOM, événements, logique côté client.</p>
-    </div>
-    <div class="card">
-      <h3>Python</h3>
-      <p>Scripts simples, conditions, boucles et fonctions.</p>
-    </div>
-    <div class="card">
-      <h3>Outils</h3>
-      <p>VS Code, GitHub, Docker, React, Canva</p>
-    </div>
+  <div class="info-box">
+    <h4>Formation</h4>
+    <p>BTS SIO SLAM<br>Ynov Campus Lyon</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Stack</h4>
+    <p>HTML, CSS, JavaScript<br>Python, Git, Docker</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Mobilité</h4>
+    <p>Permis B<br>Véhicule personnel</p>
   </div>
 </section>
 
-<section id="projets">
-  <h2>Projets</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Boutique en ligne</h3>
-      <p>
-        Site e-commerce développé en HTML, CSS et JavaScript avec interface moderne et responsive.
-      </p>
-    </div>
-    <div class="card">
-      <h3>CV en ligne</h3>
-      <p>
-        Création et déploiement d’un CV web pour présenter mon profil et mes compétences.
-      </p>
-    </div>
-  </div>
+<section class="about" id="profil">
+  <h2>À propos</h2>
+  <p>
+    Étudiant en BTS SIO option SLAM, passionné par le développement web.
+    Je recherche une alternance en développement front-end afin de progresser
+    au sein d’une équipe et devenir un développeur professionnel.
+  </p>
 </section>
 
-<section id="contact">
+<section class="about" id="contact">
   <h2>Contact</h2>
   <p>Email : msoumarabdelkerim@gmail.com</p>
-  <p>GitHub : <a style="color:#38bdf8" href="https://github.com/ms_officiel">github.com/ms_officiel</a></p>
-  <p>LinkedIn : <a style="color:#38bdf8" href="https://linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324">Voir mon profil</a></p>
+  <p>GitHub : github.com/ms_officiel</p>
+  <p>LinkedIn : linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324</p>
 </section>
 
 <footer>
