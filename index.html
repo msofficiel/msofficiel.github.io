@@ -4,159 +4,7 @@
 <meta charset="UTF-8">
 <title>Mahamat Saleh – Développeur Web Front-End</title>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", "Segoe UI", sans-serif;
-}
-
-body {
-  background: radial-gradient(circle at top, #020617, #020617);
-  color: #e5e7eb;
-}
-
-/* HEADER */
-header {
-  padding: 25px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(2,6,23,0.8);
-  backdrop-filter: blur(10px);
-}
-
-header h2 {
-  color: #22c55e;
-  font-size: 28px;
-}
-
-nav a {
-  color: #e5e7eb;
-  margin-left: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  opacity: 1;
-  color: #22c55e;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px 60px;
-}
-
-.hero h1 {
-  font-size: 64px;
-}
-
-.hero span {
-  background: linear-gradient(90deg, #22c55e, #2dd4bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero h3 {
-  margin-top: 15px;
-  font-weight: 400;
-  color: #a7f3d0;
-}
-
-.badge {
-  display: inline-block;
-  margin-top: 30px;
-  background: linear-gradient(90deg, #22c55e, #2dd4bf);
-  padding: 14px 40px;
-  border-radius: 999px;
-  color: #022c22;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* INFO */
-.info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  padding: 50px 10%;
-}
-
-.info-box {
-  background: rgba(2,44,34,0.4);
-  border-radius: 18px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-}
-
-.info-box h4 {
-  color: #22c55e;
-  margin-bottom: 10px;
-}
-
-/* SECTIONS */
-.about {
-  padding: 80px 15%;
-  text-align: center;
-}
-
-.about h2,
-.skills h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #22c55e, #2dd4bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* SKILLS */
-.skills {
-  padding: 80px 12%;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.skill-card {
-  background: rgba(2,44,34,0.5);
-  padding: 30px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  transition: 0.3s;
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-}
-
-.skill-card h3 {
-  color: #22c55e;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.skill-level {
-  color: #a7f3d0;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 50px;
-  color: #6ee7b7;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -175,32 +23,47 @@ footer {
   <h1>Oumar Abdelkerim <span>Mahamat Saleh</span></h1>
   <h3>Développeur Web Front-End</h3>
 
-  <p style="max-width:720px;margin:30px auto;color:#a7f3d0;">
-    Étudiant en BTS SIO option SLAM à Ynov Lyon Campus, je conçois des interfaces web modernes et responsives.
-    Je recherche une alternance pour progresser en front-end et full-stack.
+  <p>
+    Étudiant en BTS SIO option SLAM à Ynov Lyon Campus, je conçois des interfaces web modernes,
+    rapides et responsives en HTML, CSS, JavaScript et React.
   </p>
 
   <a class="badge" href="#projets">Voir mes projets</a>
 </section>
 
 <section class="info">
-  <div class="info-box"><h4>Localisation</h4><p>Lyon</p></div>
-  <div class="info-box"><h4>Formation</h4><p>BTS SIO SLAM<br>Ynov Campus Lyon</p></div>
-  <div class="info-box"><h4>Mobilité</h4><p>Permis B<br>Véhicule personnel</p></div>
-  <div class="info-box"><h4>Disponibilité</h4><p>Alternance immédiate</p></div>
+  <div class="info-box">
+    <h4>Localisation</h4>
+    <p>Lyon</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Formation</h4>
+    <p>BTS SIO SLAM</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Mobilité</h4>
+    <p>Permis B</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Disponibilité</h4>
+    <p>Alternance immédiate</p>
+  </div>
 </section>
 
 <section class="about" id="profil">
   <h2>À propos</h2>
   <p>
-    Étudiant en BTS SIO option SLAM, passionné par le développement web.
-    Je développe des projets concrets pour maîtriser HTML, CSS et JavaScript
-    et devenir développeur professionnel.
+    Passionné par le développement web moderne, je développe des projets concrets afin de
+    maîtriser les technologies front-end et évoluer vers un profil full-stack.
   </p>
 </section>
 
 <section class="skills" id="competences">
   <h2>Compétences techniques</h2>
+
   <div class="skills-grid">
     <div class="skill-card"><h3>HTML & CSS</h3><p class="skill-level">Confirmé</p></div>
     <div class="skill-card"><h3>JavaScript</h3><p class="skill-level">Intermédiaire</p></div>
@@ -208,20 +71,17 @@ footer {
     <div class="skill-card"><h3>Python</h3><p class="skill-level">Intermédiaire</p></div>
     <div class="skill-card"><h3>SQL</h3><p class="skill-level">Débutant</p></div>
     <div class="skill-card"><h3>Docker</h3><p class="skill-level">Débutant</p></div>
-    <div class="skill-card"><h3>C++</h3><p class="skill-level">Débutant</p></div>
     <div class="skill-card"><h3>Java</h3><p class="skill-level">Débutant</p></div>
+    <div class="skill-card"><h3>C++</h3><p class="skill-level">Débutant</p></div>
   </div>
 </section>
 
 <section class="about" id="projets">
   <h2>Projets</h2>
-  <div class="info">
-    <div class="info-box">
-      <h4>Boutique en ligne</h4>
-      <p>Site e-commerce en HTML, CSS et JavaScript.</p>
-      <a class="badge" href="https://msofficiel.github.io/boutique-en-ligne/" target="_blank">Voir le projet</a>
-    </div>
-  </div>
+
+  <a class="badge" href="https://msofficiel.github.io/boutique-en-ligne/" target="_blank">
+    Voir ma boutique en ligne
+  </a>
 </section>
 
 <section class="about" id="contact">
@@ -229,10 +89,12 @@ footer {
   <p>Email : msoumarabdelkerim@gmail.com</p>
   <p>GitHub : github.com/ms_officiel</p>
   <p>LinkedIn : linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324</p>
-  <a class="badge" href="cv_oumar_abdelkerim_developpeur_web_alternance.pdf" download>📄 Télécharger mon CV</a>
+
+  <a class="badge" href="cv_oumar_abdelkerim_developpeur_web_alternance.pdf" download>
+    📄 Télécharger mon CV
+  </a>
 </section>
 
-<footer>© 2026 — Mahamat Saleh | Portfolio BTS SIO</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
