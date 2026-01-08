@@ -1,0 +1,71 @@
+body {
+  background:#020617;
+  color:#e5e7eb;
+  font-family:Segoe UI, sans-serif;
+  margin:0;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  background:#020617;
+}
+
+header h2 {color:#22c55e;}
+
+nav a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+.hero {
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero span {color:#22c55e;}
+
+.badge {
+  background:#22c55e;
+  color:#022c22;
+  padding:12px 30px;
+  border-radius:30px;
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.info {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.info-box {
+  background:#064e3b;
+  padding:20px;
+  border-radius:10px;
+}
+
+.skills-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.skill-card {
+  background:#064e3b;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.about {
+  padding:80px 15%;
+  text-align:center;
+}
