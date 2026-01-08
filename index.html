@@ -76,6 +76,7 @@ nav a:hover {
   border-radius: 999px;
   color: #022c22;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* INFO CARDS */
@@ -99,7 +100,7 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* ABOUT */
+/* SECTIONS */
 .about {
   padding: 80px 15%;
   text-align: center;
@@ -127,10 +128,11 @@ footer {
 <header>
   <h2>Mahamat</h2>
   <nav>
-  <a href="#profil">Profil</a>
-  <a href="#projets">Projets</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <a href="#profil">Profil</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -151,42 +153,61 @@ footer {
   </div>
 
   <div class="info-box">
-    <h4>Stack</h4>
-    <p>HTML, CSS, JavaScript<br>Python, Git, Docker</p>
+    <h4>Mobilité</h4>
+    <p>Permis B<br>Véhicule personnel</p>
   </div>
 
   <div class="info-box">
-    <h4>Mobilité</h4>
-    <p>Permis B<br>Véhicule personnel</p>
+    <h4>Disponibilité</h4>
+    <p>Alternance<br>Immédiate</p>
   </div>
 </section>
 
 <section class="about" id="profil">
   <h2>À propos</h2>
   <p>
-    Étudiant en BTS SIO option SLAM, passionné par le développement web.
-    Je recherche une alternance en développement front-end afin de progresser
-    au sein d’une équipe et devenir un développeur professionnel.
+    Étudiant en BTS SIO option SLAM à Ynov Campus Lyon, je me spécialise en développement web front-end.
+    Je développe des projets concrets en HTML, CSS et JavaScript afin de maîtriser les bonnes pratiques du web moderne.
+    Je recherche une alternance pour intégrer une équipe et évoluer vers un poste de développeur professionnel.
   </p>
+</section>
 
-  <section class="about" id="projets">
+<section class="about" id="competences">
+  <h2>Compétences techniques</h2>
+
+  <div class="info">
+    <div class="info-box">
+      <h4>Confirmé</h4>
+      <p>HTML<br>CSS</p>
+    </div>
+
+    <div class="info-box">
+      <h4>Intermédiaire</h4>
+      <p>JavaScript<br>Python<br>React</p>
+    </div>
+
+    <div class="info-box">
+      <h4>Débutant</h4>
+      <p>C++<br>Java<br>Docker<br>SQL</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="projets">
   <h2>Projets</h2>
 
   <div class="info">
     <div class="info-box">
       <h4>Boutique en ligne</h4>
       <p>
-        Site e-commerce réalisé en HTML, CSS et JavaScript.<br>
-        Gestion des produits, navigation et interface responsive.
+        Site e-commerce développé de A à Z en HTML, CSS et JavaScript.<br>
+        Interface moderne, navigation fluide et gestion des produits.
       </p>
-
       <a class="badge" href="https://msofficiel.github.io/boutique-en-ligne/" target="_blank">
         Voir le projet
       </a>
     </div>
   </div>
-</section>
-  
 </section>
 
 <section class="about" id="contact">
@@ -195,11 +216,11 @@ footer {
   <p>GitHub : github.com/ms_officiel</p>
   <p>LinkedIn : linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324</p>
 
-<p>
-  <a class="badge" href="cv_oumar_abdelkerim_developpeur_web_alternance.pdf" download>
-📄 Télécharger mon CV
-</a>
-</p>
+  <p>
+    <a class="badge" href="cv_oumar_abdelkerim_developpeur_web_alternance.pdf" download>
+      📄 Télécharger mon CV
+    </a>
+  </p>
 </section>
 
 <footer>
