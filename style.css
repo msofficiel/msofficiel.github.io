@@ -107,3 +107,83 @@ nav a {
 .skill-card h3 {
   font-size: 22px;
 }
+
+
+/* ===== HERO PREMIUM ===== */
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #020617, #020617 40%, #052e1b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow derrière le nom */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(34,197,94,0.35), transparent 70%);
+  filter: blur(80px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.hero h1,
+.hero h3,
+.hero p,
+.hero .badge {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero h3 {
+  font-size: 28px;
+  margin-top: 15px;
+  color: #a7f3d0;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 850px;
+  margin: 35px auto;
+  color: #d1fae5;
+}
+
+/* Bouton principal */
+.hero .badge {
+  font-size: 20px;
+  padding: 18px 50px;
+  box-shadow: 0 0 40px rgba(34,197,94,0.4);
+  transition: 0.3s;
+}
+
+.hero .badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 70px rgba(34,197,94,0.7);
+}
+
+.info-box {
+  background: linear-gradient(180deg, rgba(34,197,94,0.15), rgba(2,44,34,0.6));
+  border: 1px solid rgba(34,197,94,0.2);
+}
+
+.info-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  transition: 0.3s;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.8);
+}
