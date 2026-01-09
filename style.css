@@ -1,6 +1,16 @@
 body {
   background:#020617;
   color:#e5e7eb;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin:0;
+  font-size: 18px; /* texte plus grand */
+  line-height: 1.7;
+}
+
+
+body {
+  background:#020617;
+  color:#e5e7eb;
   font-family:Segoe UI, sans-serif;
   margin:0;
 }
@@ -68,4 +78,32 @@ nav a {
 .about {
   padding:80px 15%;
   text-align:center;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.1;
+}
+
+.hero h3 {
+  font-size: 26px;
+  color: #a7f3d0;
+  margin-top: 10px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 30px auto;
+  font-size: 20px;
+  color: #a7f3d0;
+}
+
+.info-box,
+.skill-card {
+  font-size: 18px;
+}
+
+.info-box h4,
+.skill-card h3 {
+  font-size: 22px;
 }
