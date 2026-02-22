@@ -228,3 +228,20 @@ header {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(34,197,94,0.2);
 }
+
+/* Layout horizontal des sections */
+.sections-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 60px 5%;
+  align-items: flex-start;
+}
+
+.sections-wrapper .about {
+  flex: 1;
+  padding: 40px 30px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(34,197,94,0.2);
+}
