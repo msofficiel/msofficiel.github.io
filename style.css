@@ -26,6 +26,10 @@ body {
   font-size: 17px;
   line-height: 1.75;
   overflow-x: hidden;
+}
+
+/* Curseur activé seulement si JS fonctionne */
+body.custom-cursor {
   cursor: none;
 }
 
@@ -221,4 +225,16 @@ footer p { font-size:12px;color:var(--muted);letter-spacing:0.04em; }
   .hero h1 { font-size:40px; }
   .interests-grid { grid-template-columns:1fr 1fr; }
   .projects-grid { grid-template-columns:1fr; }
+}
+
+/* Désactive le curseur custom sur mobile */
+@media (max-width: 900px) {
+  body {
+    cursor: default;
+  }
+
+  .cursor,
+  .cursor-ring {
+    display: none;
+  }
 }
