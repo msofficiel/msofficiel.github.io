@@ -238,3 +238,12 @@ footer p { font-size:12px;color:var(--muted);letter-spacing:0.04em; }
     display: none;
   }
 }
+#cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
