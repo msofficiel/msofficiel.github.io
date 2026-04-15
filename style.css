@@ -28,10 +28,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Curseur activé seulement si JS fonctionne */
-body.custom-cursor {
-  cursor: none;
-}
+
 
 .cursor { width:10px;height:10px;background:var(--gold);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999; }
 .cursor-ring { width:36px;height:36px;border:1.5px solid var(--gold);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;opacity:0.5; }
