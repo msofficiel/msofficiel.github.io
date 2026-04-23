@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      1️⃣ ACTIVER CURSEUR CUSTOM
   ========================== */
-/*  document.body.classList.add("custom-cursor");
+  document.body.classList.add("custom-cursor");
 
   const cursor = document.getElementById("cursor");
   const ring = document.getElementById("cursorRing");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cursor.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
   });
-*/
+
   function animateRing() {
     ringX += (mouseX - ringX) * 0.15;
     ringY += (mouseY - ringY) * 0.15;
