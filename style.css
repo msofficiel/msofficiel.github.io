@@ -112,8 +112,8 @@ ul { margin: 0; padding: 0; }
 .project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; margin-bottom: 18px; }
 .project[hidden] { display: none; }
 .project-noimg { grid-template-columns: 1fr; }
-.project-shot { display: block; background: #eef1f8; border-right: 1px solid var(--line); overflow: hidden; }
-.project-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .5s ease; }
+.project-shot { display: block; align-self: start; background: #eef1f8; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-bottom-right-radius: 12px; overflow: hidden; }
+.project-shot img { width: 100%; height: auto; aspect-ratio: 893 / 589; object-fit: cover; object-position: top; transition: transform .5s ease; }
 .project-shot:hover img { transform: scale(1.03); }
 .project-body { padding: 28px clamp(22px, 3vw, 36px); display: flex; flex-direction: column; gap: 14px; }
 .project-meta { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); }
