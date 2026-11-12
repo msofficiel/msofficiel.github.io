@@ -4,17 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oumar Abdelkerim Mahamat Saleh — Développeur web junior</title>
-<meta name="description" content="Oumar Abdelkerim Mahamat Saleh, développeur web junior à Lyon. Je cherche une alternance en développement web à partir de septembre 2027.">
+<meta name="description" content="Portfolio d'Oumar Abdelkerim Mahamat Saleh, développeur web junior à Lyon. Compétences, expériences et projets détaillés. Recherche une alternance à partir de septembre 2027.">
 <meta property="og:title" content="Oumar Abdelkerim Mahamat Saleh — Développeur web junior">
-<meta property="og:description" content="Fondateur d'Albiher Digital. Je cherche une alternance à partir de septembre 2027.">
+<meta property="og:description" content="Compétences, expériences et projets détaillés. Recherche une alternance à partir de septembre 2027.">
 <meta property="og:image" content="https://msofficiel.github.io/photo.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://msofficiel.github.io/">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1a4a">
 <link rel="canonical" href="https://msofficiel.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/portrait.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -22,213 +26,451 @@
   "name": "Oumar Abdelkerim Mahamat Saleh",
   "jobTitle": "Développeur web junior",
   "url": "https://msofficiel.github.io/",
-  "image": "https://msofficiel.github.io/img/portrait.webp",
   "email": "mailto:msoumarabdelkerim@gmail.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Lyon", "addressCountry": "FR" },
   "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "SUPINFO" }, { "@type": "CollegeOrUniversity", "name": "Ynov Campus Lyon" }],
-  "founder": { "@type": "Organization", "name": "Albiher Digital", "url": "https://albiherdigital.com" },
-  "knowsAbout": ["HTML", "CSS", "JavaScript", "WordPress", "WooCommerce", "Node.js", "PHP", "MySQL"],
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "PHP", "MySQL", "WordPress", "WooCommerce", "Shopify", "PrestaShop"],
   "sameAs": ["https://github.com/msofficiel", "https://www.linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324"]
 }
 </script>
-<meta name="theme-color" content="#06133d">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<a class="skip" href="#travaux">Aller aux projets</a>
+<a class="skip" href="#projets">Aller aux projets</a>
 
 <header class="top" id="top">
-  <a href="#" class="mark" aria-label="Retour en haut">Oumar<span>.</span></a>
+  <a href="#" class="brand" aria-label="Retour en haut"><span class="brand-mark">OA</span><span class="brand-name">Oumar Abdelkerim</span></a>
   <nav aria-label="Navigation principale">
-    <a href="#travaux">Projets</a>
-    <a href="#albiher">Albiher</a>
-    <a href="#parcours">Parcours</a>
+    <a href="#competences">Compétences</a>
+    <a href="#experience">Expérience</a>
+    <a href="#projets">Projets</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="btn btn-small" href="cv_oumar.pdf" target="_blank" rel="noopener">Mon CV</a>
+  <a class="btn btn-small" href="cv_oumar.pdf" target="_blank" rel="noopener">CV</a>
 </header>
 
 <main>
 
-<!-- HERO -->
+<!-- ACCUEIL -->
 <section class="hero">
-  <div class="hero-grain" aria-hidden="true"></div>
-  <div class="hero-glow" aria-hidden="true"></div>
-
-  <div class="hero-head">
-    <p class="hero-role">Développeur web junior<br>Lyon, France</p>
-    <p class="hero-avail">Alternance<br><strong>Septembre 2027</strong></p>
+  <div class="hero-text">
+    <p class="status"><span class="dot" aria-hidden="true"></span>Disponible en alternance à partir de septembre 2027</p>
+    <h1>Oumar Abdelkerim<br>Mahamat Saleh</h1>
+    <p class="hero-role">Développeur web junior</p>
+    <p class="hero-pitch">Je construis des sites et des applications web, de la maquette jusqu'à la mise en ligne. Front-end, back-end Node.js et PHP, bases de données MySQL, WordPress et e-commerce.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#projets">Voir mes projets</a>
+      <a class="btn btn-ghost" href="cv_oumar.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+    </div>
+    <ul class="hero-links">
+      <li><a href="https://github.com/msofficiel" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:msoumarabdelkerim@gmail.com">msoumarabdelkerim@gmail.com</a></li>
+    </ul>
   </div>
 
-  <h1 class="hero-name" aria-label="Oumar Abdelkerim Mahamat Saleh, développeur web">
-    <span class="hero-first">Oumar</span>
-  </h1>
-
-  <img class="hero-portrait" src="img/portrait.webp" alt="Portrait d'Oumar Abdelkerim Mahamat Saleh" width="798" height="1140" fetchpriority="high" decoding="async">
-
-  <div class="hero-foot">
-    <p class="hero-lead">Je conçois des sites web, je les développe et je les mets en ligne pour de vrais clients.</p>
-    <div class="hero-side">
-      <p class="hero-full">Abdelkerim<br>Mahamat Saleh</p>
-      <div class="hero-actions">
-        <a class="btn btn-yellow" href="#travaux">Voir mes réalisations</a>
-        <a class="btn btn-line" href="mailto:msoumarabdelkerim@gmail.com">Me contacter</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONFIANCE -->
-<div class="trust">
-  <p class="trust-label">Ils m'ont fait confiance</p>
-  <ul class="trust-list">
-    <li>Zone Auto</li>
-    <li>GAO Connexion</li>
-    <li>AD Numeric</li>
-  </ul>
-</div>
-
-<!-- RÉALISATIONS -->
-<section class="work" id="travaux">
-  <div class="section-head">
-    <h2>Réalisations</h2>
-    <p>Trois sites en ligne, réalisés avec Albiher Digital pour de vrais clients.</p>
-  </div>
-
-  <article class="case reveal">
-    <a class="case-shot" href="https://zoneautotchad.com" target="_blank" rel="noopener" aria-label="Ouvrir zoneautotchad.com">
-      <div class="browser"><span></span><span></span><span></span><em>zoneautotchad.com</em></div>
-      <img src="img/zoneauto.webp" alt="Page d'accueil du site Zone Auto" loading="lazy" decoding="async" width="893" height="589">
-    </a>
-    <div class="case-info">
-      <p class="case-meta"><span class="tag-client">Client</span> N'Djamena, 2026</p>
-      <h3>Zone Auto</h3>
-      <p>Site e-commerce pour une boutique de lubrifiants TotalEnergies, de pneus et de location de voitures. Commande en ligne ou par WhatsApp, paiement Airtel et Moov Money, livraison à N'Djamena.</p>
-      <ul class="stack"><li>WordPress</li><li>WooCommerce</li><li>OVH</li></ul>
-      <a class="case-link" href="https://zoneautotchad.com" target="_blank" rel="noopener">Visiter le site</a>
-    </div>
-  </article>
-
-  <article class="case case-flip reveal">
-    <a class="case-shot" href="https://gaoconnexion.com" target="_blank" rel="noopener" aria-label="Ouvrir gaoconnexion.com">
-      <div class="browser"><span></span><span></span><span></span><em>gaoconnexion.com</em></div>
-      <img src="img/gao.webp" alt="Page d'accueil du site GAO Connexion" loading="lazy" decoding="async" width="893" height="589">
-    </a>
-    <div class="case-info">
-      <p class="case-meta"><span class="tag-client">Client</span> Import-export, 2026</p>
-      <h3>GAO Connexion</h3>
-      <p>Site vitrine pour une entreprise qui accompagne les achats entre l'Afrique et la Chine. J'ai aussi développé son application de facturation : PDF avec logo, quatre devises, envoi par e-mail.</p>
-      <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>MySQL</li></ul>
-      <a class="case-link" href="https://gaoconnexion.com" target="_blank" rel="noopener">Visiter le site</a>
-    </div>
-  </article>
-
-  <article class="case reveal">
-    <a class="case-shot" href="https://albiherdigital.com" target="_blank" rel="noopener" aria-label="Ouvrir albiherdigital.com">
-      <div class="browser"><span></span><span></span><span></span><em>albiherdigital.com</em></div>
-      <img src="img/albiher.webp" alt="Page d'accueil du site Albiher Digital" loading="lazy" decoding="async" width="893" height="589">
-    </a>
-    <div class="case-info">
-      <p class="case-meta"><span class="tag-own">Notre agence</span> N'Djamena, 2026</p>
-      <h3>Albiher Digital</h3>
-      <p>Le site de l'agence : présentation des prestations, réalisations, blog, formulaire de contact et espace admin sécurisé.</p>
-      <ul class="stack"><li>PHP</li><li>MySQL</li><li>JWT</li><li>OVH</li></ul>
-      <a class="case-link" href="https://albiherdigital.com" target="_blank" rel="noopener">Visiter le site</a>
-    </div>
-  </article>
-
-  <h3 class="more-title">Autres projets</h3>
-  <ul class="more">
-    <li>
-      <span class="more-name">Chatbot IA</span>
-      <span class="more-desc">Assistant qui répond automatiquement aux questions des clients.</span>
-      <span class="more-stack">IA, JavaScript</span>
-    </li>
-    <li>
-      <span class="more-name">Module de gestion <small>en cours</small></span>
-      <span class="more-desc">Outil interne en PWA pour Albiher : clients, devis, factures PDF, projets en Kanban, mode hors ligne.</span>
-      <span class="more-stack">PWA, JavaScript, MySQL</span>
-    </li>
-    <li>
-      <a class="more-name" href="https://github.com/msofficiel/lifearchive" target="_blank" rel="noopener">LifeArchive</a>
-      <span class="more-desc">Gestionnaire de documents personnels avec connexion JWT, envoi de fichiers et API REST.</span>
-      <span class="more-stack">Node.js, Express, MySQL</span>
-    </li>
-    <li>
-      <a class="more-name" href="https://msofficiel.github.io/boutique-en-ligne/" target="_blank" rel="noopener">Boutique en ligne</a>
-      <span class="more-desc">Catalogue produits dynamique et panier, en JavaScript sans framework.</span>
-      <span class="more-stack">HTML, CSS, JavaScript</span>
-    </li>
-  </ul>
-</section>
-
-<!-- ALBIHER -->
-<section class="albiher" id="albiher">
-  <div class="albiher-inner">
-    <p class="albiher-name">Albiher Digital, N'Djamena</p>
-    <blockquote class="albiher-quote reveal">
-      Albiher Digital aide les entreprises tchadiennes à avoir des sites au niveau des meilleurs.
-    </blockquote>
-    <p class="albiher-team reveal">Une équipe sur place à N'Djamena, avec un gérant qui suit les clients au quotidien. J'ai fondé l'entreprise et j'en suis le développeur web.</p>
-    <div class="albiher-grid">
-      <div class="step reveal"><b>Rencontre</b><p>On rencontre le client et on comprend ce qu'il attend de son site.</p></div>
-      <div class="step reveal"><b>Maquette</b><p>On montre une première version avant d'écrire la moindre ligne.</p></div>
-      <div class="step reveal"><b>Développement</b><p>WordPress, PHP ou Node.js selon le besoin.</p></div>
-      <div class="step reveal"><b>Mise en ligne</b><p>Nom de domaine, hébergement, e-mails pro, référencement.</p></div>
-    </div>
+  <div class="hero-visual">
+    <img class="hero-photo" src="img/photo.webp" alt="Portrait d'Oumar Abdelkerim Mahamat Saleh" width="700" height="805" fetchpriority="high">
+    <pre class="code-card" aria-label="Résumé du profil sous forme de code"><code><span class="k">const</span> <span class="v">oumar</span> = {
+  <span class="p">role</span>: <span class="s">"Développeur web junior"</span>,
+  <span class="p">formation</span>: <span class="s">"Bachelor SUPINFO, 2e année"</span>,
+  <span class="p">stack</span>: [<span class="s">"JS"</span>, <span class="s">"Node.js"</span>, <span class="s">"PHP"</span>, <span class="s">"MySQL"</span>],
+  <span class="p">alternance</span>: <span class="s">"sept. 2027"</span>,
+  <span class="p">ville</span>: <span class="s">"Lyon"</span>,
+};</code></pre>
   </div>
 </section>
 
-<!-- PARCOURS -->
-<section class="block" id="parcours">
-  <div class="section-head">
-    <h2>Parcours</h2>
+<!-- CHIFFRES -->
+<section class="numbers" aria-label="En chiffres">
+  <div><strong>3</strong><span>sites en ligne pour de vrais clients</span></div>
+  <div><strong>6</strong><span>boutiques Shopify auditées en stage</span></div>
+  <div><strong>8</strong><span>projets détaillés sur cette page</span></div>
+  <div><strong>2027</strong><span>alternance recherchée, dès septembre</span></div>
+</section>
+
+<!-- À PROPOS -->
+<section class="block about" id="apropos">
+  <h2>À propos</h2>
+  <div class="about-body">
+    <p>Je suis étudiant en 2e année de Bachelor informatique à SUPINFO, après une 1re année de BTS SIO option SLAM validée à Ynov Lyon. J'aime les projets concrets : comprendre le besoin d'un client, construire la solution et la voir tourner en ligne.</p>
+    <p>En parallèle de mes études, j'ai fondé Albiher Digital, une agence web au Tchad avec une équipe sur place. J'en suis le développeur web : c'est là que j'ai livré mes premiers sites clients, de l'achat du nom de domaine jusqu'à la mise en production.</p>
+    <p>Pendant mon stage chez AD Numeric, j'ai travaillé sur des boutiques e-commerce en production (Shopify et PrestaShop) : audit, performance, SEO technique et intégration.</p>
+    <p>Je cherche une <strong>alternance en développement web à partir de septembre 2027</strong> pour progresser au sein d'une équipe.</p>
   </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="block" id="competences">
+  <div class="block-head">
+    <h2>Compétences</h2>
+    <p>Ce que j'utilise vraiment, et sur quels projets.</p>
+  </div>
+  <div class="skills">
+    <article class="skill">
+      <h3>Front-end</h3>
+      <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li><li>Accessibilité</li></ul>
+      <p>Intégration de maquettes, mise en page responsive, interactions en JavaScript sans framework.</p>
+      <p class="used">Utilisé sur : GAO Connexion, Boutique en ligne, ce portfolio</p>
+    </article>
+    <article class="skill">
+      <h3>Back-end et API</h3>
+      <ul class="tags"><li>Node.js</li><li>Express</li><li>PHP</li><li>API REST</li><li>JWT</li><li>bcrypt</li></ul>
+      <p>Routes et API REST, authentification par JWT, upload de fichiers, génération de PDF côté serveur, envoi d'e-mails.</p>
+      <p class="used">Utilisé sur : GAO Facture, LifeArchive, site Albiher Digital</p>
+    </article>
+    <article class="skill">
+      <h3>Bases de données</h3>
+      <ul class="tags"><li>MySQL</li><li>Modélisation</li><li>SQL</li></ul>
+      <p>Conception des tables, requêtes, connexion depuis Node.js et PHP, bases hébergées (Clever Cloud, OVH).</p>
+      <p class="used">Utilisé sur : GAO Facture, LifeArchive, site Albiher Digital</p>
+    </article>
+    <article class="skill">
+      <h3>CMS et e-commerce</h3>
+      <ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>Shopify</li><li>PrestaShop</li></ul>
+      <p>Création de boutique WooCommerce, audit d'applis Shopify, modification de thèmes PrestaShop.</p>
+      <p class="used">Utilisé sur : Zone Auto, stage AD Numeric</p>
+    </article>
+    <article class="skill">
+      <h3>Mise en ligne et outils</h3>
+      <ul class="tags"><li>Git / GitHub</li><li>OVH</li><li>Hostinger</li><li>Render</li><li>Railway</li><li>Cloudflare</li><li>DNS</li></ul>
+      <p>Nom de domaine, hébergement, e-mails pro, redirections, variables d'environnement, déploiement continu.</p>
+      <p class="used">Utilisé sur : tous les projets en ligne</p>
+    </article>
+    <article class="skill">
+      <h3>Performance et SEO</h3>
+      <ul class="tags"><li>PageSpeed</li><li>Core Web Vitals</li><li>Données structurées</li><li>Google Merchant Center</li></ul>
+      <p>Diagnostic de performance, correction de décalages de mise en page, vérification des données structurées.</p>
+      <p class="used">Utilisé sur : stage AD Numeric</p>
+    </article>
+  </div>
+  <p class="learning"><strong>En cours d'apprentissage :</strong> React, Docker, Java, C++, automatisation avec n8n.</p>
+</section>
+
+<!-- EXPÉRIENCE -->
+<section class="block" id="experience">
+  <div class="block-head">
+    <h2>Expérience</h2>
+  </div>
+
   <ol class="timeline">
-    <li class="next reveal">
-      <span class="when">Sept. 2027</span>
-      <div><h3>Alternance en développement web</h3><p>C'est ce que je cherche, pour l'année 2027-2028.</p></div>
+    <li class="job">
+      <div class="job-side">
+        <span class="job-date">Été 2026</span>
+        <span class="job-place">Lyon</span>
+      </div>
+      <div class="job-main">
+        <h3>Stagiaire développeur web</h3>
+        <p class="job-org">AD Numeric, agence e-commerce</p>
+        <ul class="job-tasks">
+          <li><strong>Audit de 6 boutiques Shopify</strong> en production : inventaire des applications, repérage des abonnements en double, documentation et remplacement d'outils obsolètes (migration des avis clients de Loox vers Judge.me).</li>
+          <li><strong>Performance :</strong> diagnostic avec PageSpeed Insights et correction d'un décalage de mise en page (CLS de 0,29 à 0,08) en modifiant le CSS sur un thème dupliqué, sans toucher au site en ligne.</li>
+          <li><strong>SEO technique :</strong> contrôle des données structurées produits et avis avec l'outil de résultats enrichis de Google, et liste des champs manquants à corriger.</li>
+          <li><strong>Google Shopping :</strong> mise en place de la diffusion gratuite des produits sur plusieurs boutiques, configuration de Google Merchant Center.</li>
+          <li><strong>PrestaShop :</strong> retouches du header et du footer d'un site de luminaires, intégration de produits ; audit complet d'une préproduction pendant un changement de marque (bugs, contenus non migrés) avec rapport détaillé.</li>
+          <li><strong>Automatisation :</strong> génération des rapports d'audit au format Word avec Node.js (bibliothèque docx).</li>
+        </ul>
+        <ul class="tags"><li>Shopify</li><li>PrestaShop</li><li>CSS</li><li>PageSpeed</li><li>Node.js</li><li>DNS</li></ul>
+      </div>
     </li>
-    <li class="reveal">
-      <span class="when">2026 – auj.</span>
-      <div><h3>Bachelor informatique, 2e année</h3><p>SUPINFO</p></div>
+
+    <li class="job">
+      <div class="job-side">
+        <span class="job-date">2025 – aujourd'hui</span>
+        <span class="job-place">N'Djamena, Tchad</span>
+      </div>
+      <div class="job-main">
+        <h3>Fondateur et développeur web</h3>
+        <p class="job-org">Albiher Digital, agence web avec une équipe sur place</p>
+        <ul class="job-tasks">
+          <li>Développement des sites et applications clients, de la maquette à la mise en production.</li>
+          <li>Gestion technique : noms de domaine, hébergement, e-mails professionnels, redirections, sécurité de l'administration.</li>
+          <li>Travail avec le gérant sur place, qui suit les clients et remonte les besoins.</li>
+          <li>Conception d'un outil interne de gestion (clients, devis, factures, projets).</li>
+        </ul>
+        <ul class="tags"><li>WordPress</li><li>PHP</li><li>Node.js</li><li>MySQL</li><li>OVH</li></ul>
+      </div>
     </li>
-    <li class="reveal">
-      <span class="when">2026</span>
-      <div><h3>Stage développeur web</h3><p>AD Numeric, Lyon. Audit de boutiques Shopify (applis, performances, Google Shopping) et travail sur des sites PrestaShop.</p></div>
+
+    <li class="job">
+      <div class="job-side">
+        <span class="job-date">2026 – aujourd'hui</span>
+        <span class="job-place">SUPINFO</span>
+      </div>
+      <div class="job-main">
+        <h3>Bachelor informatique, 2e année</h3>
+        <p class="job-org">SUPINFO</p>
+      </div>
     </li>
-    <li class="reveal">
-      <span class="when">2025 – auj.</span>
-      <div><h3>Fondateur et développeur web</h3><p>Albiher Digital, agence web à N'Djamena (Tchad), avec une équipe sur place.</p></div>
-    </li>
-    <li class="reveal">
-      <span class="when">2024 – 2025</span>
-      <div><h3>BTS SIO option SLAM, 1re année validée</h3><p>Ynov Campus, Lyon</p></div>
+
+    <li class="job">
+      <div class="job-side">
+        <span class="job-date">2024 – 2025</span>
+        <span class="job-place">Lyon</span>
+      </div>
+      <div class="job-main">
+        <h3>BTS SIO option SLAM, 1re année validée</h3>
+        <p class="job-org">Ynov Campus Lyon</p>
+        <p class="job-note">Algorithmique, bases de données, développement web, réseaux.</p>
+      </div>
     </li>
   </ol>
+</section>
 
-  <dl class="skills">
-    <div><dt>Au quotidien</dt><dd>HTML, CSS, JavaScript, WordPress, WooCommerce, Git</dd></div>
-    <div><dt>Back-end</dt><dd>Node.js, Express, PHP, MySQL, API REST, JWT</dd></div>
-    <div><dt>E-commerce</dt><dd>Shopify, PrestaShop</dd></div>
-    <div><dt>J'apprends</dt><dd>React, Docker, Java, C++</dd></div>
-  </dl>
+<!-- PROJETS -->
+<section class="block" id="projets">
+  <div class="block-head">
+    <h2>Projets</h2>
+    <p>Chaque projet est expliqué en détail : le contexte, ce que j'ai fait, les choix techniques et le résultat.</p>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filtrer les projets">
+    <button class="filter is-on" data-filter="all" aria-pressed="true">Tous</button>
+    <button class="filter" data-filter="client" aria-pressed="false">Clients</button>
+    <button class="filter" data-filter="app" aria-pressed="false">Applications</button>
+    <button class="filter" data-filter="perso" aria-pressed="false">Projets perso</button>
+  </div>
+
+  <!-- ZONE AUTO -->
+  <article class="project" data-cat="client">
+    <a class="project-shot" href="https://zoneautotchad.com" target="_blank" rel="noopener" aria-label="Ouvrir zoneautotchad.com">
+      <img src="img/zoneauto.webp" alt="Page d'accueil de Zone Auto" loading="lazy" decoding="async" width="893" height="589">
+    </a>
+    <div class="project-body">
+      <p class="project-meta"><span class="badge">Client</span> E-commerce · 2026</p>
+      <h3>Zone Auto</h3>
+      <p class="project-lead">Boutique en ligne pour un revendeur de lubrifiants, de pneus et de location de voitures à N'Djamena.</p>
+      <ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>OVH</li><li>Responsive</li></ul>
+      <div class="project-links">
+        <a class="link" href="https://zoneautotchad.com" target="_blank" rel="noopener">Voir le site</a>
+      </div>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Contexte</h4>
+          <p>Le client est un revendeur agréé de lubrifiants TotalEnergies qui vend aussi des pneus et loue des véhicules. Il n'avait aucune présence en ligne et voulait que ses clients puissent voir les produits et commander facilement.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Une maquette en HTML/CSS mise en ligne pour que le client la valide avant le devis.</li>
+            <li>Le site sous WordPress et WooCommerce, pensé pour le mobile comme pour l'ordinateur.</li>
+            <li>Le catalogue produits avec références et prix fournis par le client.</li>
+            <li>Un parcours de commande adapté : commande sur le site ou par WhatsApp, location en demande à confirmer par le gérant.</li>
+            <li>Les modes de paiement locaux : paiement à la livraison ou en boutique, Airtel Money et Moov Money.</li>
+            <li>La mise en ligne complète : nom de domaine, hébergement OVH, adresses e-mail professionnelles.</li>
+          </ul>
+          <h4>Choix techniques</h4>
+          <ul>
+            <li>WooCommerce pour que le gérant puisse ajouter ses produits seul, sans moi.</li>
+            <li>Page de connexion d'administration déplacée sur une adresse personnalisée, accès par défaut bloqué.</li>
+            <li>Un compte gérant séparé du compte administrateur.</li>
+          </ul>
+          <h4>Résultat</h4>
+          <p>Site en ligne depuis octobre 2026. Prochaines étapes : Google Search Console, fiche Google Maps et newsletter.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- GAO CONNEXION -->
+  <article class="project" data-cat="client">
+    <a class="project-shot" href="https://gaoconnexion.com" target="_blank" rel="noopener" aria-label="Ouvrir gaoconnexion.com">
+      <img src="img/gao.webp" alt="Page d'accueil de GAO Connexion" loading="lazy" decoding="async" width="893" height="589">
+    </a>
+    <div class="project-body">
+      <p class="project-meta"><span class="badge">Client</span> Site vitrine · 2026</p>
+      <h3>GAO Connexion</h3>
+      <p class="project-lead">Site vitrine multi-pages pour une entreprise qui accompagne les achats entre l'Afrique et la Chine.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Formspree</li><li>Hostinger</li></ul>
+      <div class="project-links">
+        <a class="link" href="https://gaoconnexion.com" target="_blank" rel="noopener">Voir le site</a>
+      </div>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Contexte</h4>
+          <p>Une entreprise d'import-export basée en Chine avait besoin d'un site pour présenter ses services à des clients africains et recevoir des demandes.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Le design complet : charte vert, rouge et crème, typographie Inter, mise en page responsive.</li>
+            <li>Plusieurs pages : accueil, services, présentation, contact.</li>
+            <li>Le formulaire de contact branché sur Formspree, puis corrigé quand les messages n'arrivaient plus.</li>
+            <li>La mise en ligne sur Hostinger avec le nom de domaine du client.</li>
+          </ul>
+          <h4>Choix techniques</h4>
+          <p>Un site statique en HTML, CSS et JavaScript : rapide, peu coûteux à héberger et simple à maintenir pour un site vitrine. Formspree évite d'avoir un serveur juste pour envoyer des e-mails.</p>
+          <h4>Résultat</h4>
+          <p>Site en ligne sur gaoconnexion.com. Le même client m'a ensuite demandé son application de facturation.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- GAO FACTURE -->
+  <article class="project project-noimg" data-cat="app client">
+    <div class="project-body">
+      <p class="project-meta"><span class="badge">Client</span> Application web · 2026</p>
+      <h3>GAO Facture</h3>
+      <p class="project-lead">Application de facturation pour GAO Connexion : création de factures, PDF avec logo, plusieurs devises et envoi par e-mail.</p>
+      <ul class="tags"><li>Node.js</li><li>Express</li><li>MySQL</li><li>PDFKit</li><li>Resend</li><li>Render</li></ul>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Contexte</h4>
+          <p>Le client faisait ses factures à la main, en plusieurs devises selon ses clients (FCFA, euro, dollar, yuan). Il voulait un outil simple pour les créer et les envoyer.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Une API Node.js / Express avec authentification pour gérer les factures.</li>
+            <li>La génération du PDF côté serveur avec PDFKit, logo inclus, et une page d'aperçu en HTML.</li>
+            <li>Le calcul multi-devises (FCFA, EUR, USD, CNY) avec frais additionnels et remise optionnelle.</li>
+            <li>L'envoi des factures par e-mail avec Resend, depuis l'adresse professionnelle du client.</li>
+          </ul>
+          <h4>Choix techniques</h4>
+          <ul>
+            <li>Base MySQL hébergée sur Clever Cloud, application déployée sur Render (migrée depuis Railway).</li>
+            <li>Le middleware d'authentification laisse passer uniquement les routes d'aperçu et de PDF, pour qu'une facture puisse être partagée par lien.</li>
+          </ul>
+          <h4>Résultat</h4>
+          <p>Application en ligne et utilisée par le client pour ses factures.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- ALBIHER DIGITAL -->
+  <article class="project" data-cat="client">
+    <a class="project-shot" href="https://albiherdigital.com" target="_blank" rel="noopener" aria-label="Ouvrir albiherdigital.com">
+      <img src="img/albiher.webp" alt="Page d'accueil d'Albiher Digital" loading="lazy" decoding="async" width="893" height="589">
+    </a>
+    <div class="project-body">
+      <p class="project-meta"><span class="badge badge-dark">Albiher</span> Site + back-office · 2026</p>
+      <h3>Albiher Digital</h3>
+      <p class="project-lead">Le site de l'agence, avec une petite API en PHP, un espace d'administration sécurisé et la gestion des messages de contact.</p>
+      <ul class="tags"><li>PHP</li><li>MySQL</li><li>JWT</li><li>OVH</li><li>Cloudflare</li></ul>
+      <div class="project-links">
+        <a class="link" href="https://albiherdigital.com" target="_blank" rel="noopener">Voir le site</a>
+      </div>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Contexte</h4>
+          <p>L'agence avait besoin d'un site pour présenter ses prestations et ses réalisations, et d'un back-office pour lire les demandes des clients.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Le site vitrine : prestations, réalisations, blog, équipe, contact.</li>
+            <li>Une API en PHP : envoi du formulaire de contact, connexion admin, lecture des messages.</li>
+            <li>L'authentification de l'administration par jeton JWT.</li>
+            <li>Le changement de nom de l'agence : nouveau domaine, et redirection 301 de l'ancien domaine via Cloudflare en gardant les chemins des pages.</li>
+          </ul>
+          <h4>Choix techniques</h4>
+          <p>Le back-end était d'abord prévu en Node.js. Je l'ai réécrit en PHP pour qu'il tourne sur un hébergement mutualisé OVH, moins cher et suffisant pour ce besoin.</p>
+          <h4>Difficulté rencontrée</h4>
+          <p>Le rattachement du nouveau domaine à l'hébergement était bloqué par un problème côté OVH. J'ai identifié la commande en cause et suivi le dossier avec leur support.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- LIFEARCHIVE -->
+  <article class="project project-noimg" data-cat="app perso">
+    <div class="project-body">
+      <p class="project-meta"><span class="badge badge-light">Perso</span> Application full-stack · 2025</p>
+      <h3>LifeArchive</h3>
+      <p class="project-lead">Gestionnaire de documents personnels : chaque utilisateur se connecte, envoie ses fichiers et les retrouve classés.</p>
+      <ul class="tags"><li>Node.js</li><li>Express</li><li>MySQL</li><li>JWT</li><li>bcrypt</li><li>Multer</li><li>Railway</li></ul>
+      <div class="project-links">
+        <a class="link" href="https://github.com/msofficiel/lifearchive" target="_blank" rel="noopener">Code sur GitHub</a>
+      </div>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Objectif</h4>
+          <p>Construire une vraie application full-stack de bout en bout : inscription, connexion, stockage de fichiers et API REST.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Une API REST avec Express : comptes, connexion, documents.</li>
+            <li>Mots de passe chiffrés avec bcrypt, sessions par jeton JWT.</li>
+            <li>Envoi de fichiers avec Multer et enregistrement des informations en base MySQL.</li>
+          </ul>
+          <h4>Ce que le déploiement m'a appris</h4>
+          <p>En le mettant en ligne sur Railway, j'ai dû corriger plusieurs erreurs classiques : ports et identifiants écrits en dur (passés en variables d'environnement), tables manquantes en production, adresses « localhost » restées dans le front-end.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- MODULE DE GESTION -->
+  <article class="project project-noimg" data-cat="app">
+    <div class="project-body">
+      <p class="project-meta"><span class="badge badge-light">En conception</span> Outil interne · 2026</p>
+      <h3>Module de gestion Albiher</h3>
+      <p class="project-lead">Application interne pour gérer les clients, les devis, les factures et l'avancement des projets de l'agence.</p>
+      <ul class="tags"><li>PWA</li><li>JavaScript</li><li>MySQL</li></ul>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Besoin</h4>
+          <p>Avec une équipe répartie et plusieurs clients, l'agence a besoin d'un seul outil pour suivre le commercial et la production.</p>
+          <h4>Ce qui est prévu</h4>
+          <ul>
+            <li>Fichier clients (CRM) et catalogue des prestations.</li>
+            <li>Devis et factures en PDF.</li>
+            <li>Suivi des projets en tableau Kanban et journal d'activité des techniciens.</li>
+            <li>Fonctionnement hors ligne avec synchronisation, et journal d'audit.</li>
+            <li>Trois rôles : administrateur, gérant et technicien.</li>
+          </ul>
+          <h4>Où j'en suis</h4>
+          <p>Le cahier des charges est rédigé. Prochaine étape : le schéma de la base de données.</p>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- BOUTIQUE -->
+  <article class="project project-noimg" data-cat="perso">
+    <div class="project-body">
+      <p class="project-meta"><span class="badge badge-light">Perso</span> Front-end · 2025</p>
+      <h3>Boutique en ligne</h3>
+      <p class="project-lead">Boutique de démonstration en JavaScript sans framework : catalogue, filtre par catégorie, panier et page de réclamation.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+      <div class="project-links">
+        <a class="link" href="https://msofficiel.github.io/boutique-en-ligne/" target="_blank" rel="noopener">Voir la démo</a>
+        <a class="link" href="https://github.com/msofficiel/boutique-en-ligne" target="_blank" rel="noopener">Code sur GitHub</a>
+      </div>
+      <details>
+        <summary>Lire le détail du projet</summary>
+        <div class="case">
+          <h4>Objectif</h4>
+          <p>Maîtriser la manipulation du DOM et la gestion d'état en JavaScript pur avant de passer à un framework.</p>
+          <h4>Ce que j'ai fait</h4>
+          <ul>
+            <li>Affichage dynamique des produits à partir de données JavaScript.</li>
+            <li>Filtre par catégorie et compteur de panier mis à jour en direct.</li>
+            <li>Mise en page responsive et publication sur GitHub Pages.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- CHATBOT -->
+  <article class="project project-noimg" data-cat="app">
+    <div class="project-body">
+      <p class="project-meta"><span class="badge badge-light">Albiher</span> IA · 2026</p>
+      <h3>Chatbot IA</h3>
+      <p class="project-lead">Assistant qui répond automatiquement aux questions des clients.</p>
+      <ul class="tags"><li>IA</li><li>JavaScript</li></ul>
+    </div>
+  </article>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="hero-grain" aria-hidden="true"></div>
-  <p class="contact-kicker">Vous cherchez un alternant pour septembre 2027 ?</p>
-  <a class="contact-mail" href="mailto:msoumarabdelkerim@gmail.com">Parlons-en.</a>
-  <p class="contact-address">msoumarabdelkerim@gmail.com</p>
+  <h2>Travaillons ensemble</h2>
+  <p>Vous cherchez un alternant en développement web pour septembre 2027 ? Écrivez-moi, je réponds rapidement.</p>
+  <a class="contact-mail" href="mailto:msoumarabdelkerim@gmail.com">msoumarabdelkerim@gmail.com</a>
   <ul class="contact-links">
-    <li><a href="https://www.linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/msofficiel" target="_blank" rel="noopener">GitHub</a></li>
-    <li><a href="cv_oumar.pdf" target="_blank" rel="noopener">CV en PDF</a></li>
+    <li><a class="btn btn-light" href="https://www.linkedin.com/in/oumar-abdelkerim-mahamat-saleh-78a479324" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a class="btn btn-light" href="https://github.com/msofficiel" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a class="btn btn-light" href="cv_oumar.pdf" target="_blank" rel="noopener">CV en PDF</a></li>
   </ul>
 </section>
 
@@ -236,8 +478,7 @@
 
 <footer class="foot">
   <span>© 2026 Oumar Abdelkerim Mahamat Saleh</span>
-  <span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>
-  <span>Lyon, France</span>
+  <span>Développeur web junior, Lyon</span>
 </footer>
 
 <script src="script.js"></script>
